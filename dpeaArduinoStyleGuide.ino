@@ -31,21 +31,23 @@ void setup() {
   }
 }
 
-//////////////////////////////////////////////////////////////////////////////
-//  Keep lines to 80 characters max to allow split screen usage             //
-//  For reference, these text boxes are 80 characters wide                  //
-//  for statements can be split as demonstrated below if >80 characters     //
-//                                                                          //
-//  Note the vertical spacing to group related statements (paragraphing)    //
-//  Readability, structure, and organization are paramount to good code     //
-//                                                                          //
-//  Comment anything complicated, potentially confusing, or unclear         //
-//  Your code should read like English, so it should mostly self-comment    //
-//  Use descriptive variable names and logic that makes the purpose obvious //
-//                                                                          //
-//  The Serial Monitor is a great commenting and debugging tool             //
-//  I give two different example uses, one of which uses Strings            //
-//////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//  Keep line width reasonable to allow split screen usage                    //
+//  For reference, these text boxes are 80 characters wide (an old standard)  //
+//  for statements can be split as demonstrated below if necessary            //
+//                                                                            //
+//  Note the vertical spacing to group related statements (paragraphing)      //
+//  Readability, structure, and organization are paramount to good code       //
+//  Use descriptive variable names and clear logic for best readability       //
+//                                                                            //
+//  Comment anything complicated, potentially confusing, or unclear           //
+//  Considering rethinking your approach if you have to comment excessively   //
+//  Your code should read like English, so it should mostly self-comment      //
+//                                                                            //
+//  The Serial Monitor is a great commenting and debugging tool               //
+//  I give two different example uses, one of which uses Strings              //
+//  If your code isn't working correctly due to logic errors, Monitor it!     //
+////////////////////////////////////////////////////////////////////////////////
 
 void loop() {
   //
