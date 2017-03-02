@@ -1,4 +1,4 @@
-/* DPEA Arduino Style Guide - Created 022617 by Kyle Steawrt */
+/* DPEA Arduino Style Guide - Created 022617 by Kyle Stewart */
 /* Begin each sketch with a one-line file name, date, and author like this */
 
 ////////////////////////////////////////////////////////////////////////////////
