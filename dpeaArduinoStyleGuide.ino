@@ -95,7 +95,7 @@ void delayUsingKnob() {
 //
 // read and report knob voltage (minKnobValue to 1023)
 //
-int getStartingKnobVoltage(byte pin) {
+int getStartingKnobVoltage(const byte pin) {
   int value = analogRead(pin); // read the knob voltage (0 to 1023)
 
   String knobPrintString = String("Starting knob Value: ") + value;
