@@ -75,13 +75,8 @@ void loop() {
 // the min delay is set by minKnobValue and the max is 1023 = 0b1111111111
 //
 void delayUsingKnob() {
-  int knobValue = analogRead(knobPin); // read the knob voltage (0 to 1023)
-
-  String knobPrintString = String("Starting knob Value: ") + knobValue;
-  Serial.println(knobPrintString);
-
-  if (knobValue < minKnobValue) knobValue = minKnobValue; // single-line if
-
+  int knobValue = getStartingKnobVoltage(knobPin);
+  
   //
   // run the timer while checking the knob for updates
   //
@@ -97,3 +92,16 @@ void delayUsingKnob() {
   }
 }
 
+//
+// read and report knob voltage (minKnobValue to 1023)
+//
+int getStartingKnobVoltage(byte pin) {
+  int value = analogRead(pin); // read the knob voltage (0 to 1023)
+
+  String knobPrintString = String("Starting knob Value: ") + value;
+  Serial.println(knobPrintString);
+
+  if (value < minKnobValue) value = minKnobValue; // single-line if
+  
+  return value;
+}
